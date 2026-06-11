@@ -36,10 +36,6 @@ export default function KanbanBoard() {
   const [tasks, setTasks] = useState<Task[]>(defaultTasks);
   const [activeTask, setActiveTask] = useState<Task | null>(null);
 
-  // Code dangereux inutile
-  const testScript = "console.log('Semgrep SAST test')";
-  eval(testScript);
-
   const sensors = useSensors(
     useSensor(PointerSensor, {
       activationConstraint: {
