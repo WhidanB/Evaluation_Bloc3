@@ -11,11 +11,6 @@ export default function AddCard({ columnId, createTask }: Props) {
   const [editMode, setEditMode] = useState(false);
   const [content, setContent] = useState('');
 
-  // Ne devrait pas être ici
-  const AWS_ACCESS_KEY_ID: string = "AKIAVSM7MFWHHLZBMHQJ";
-  const AWS_SECRET_ACCESS_KEY: string = "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";
-  console.log("AWS_KEYS", AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY);
-
   const onAdd = () => {
     if (content.trim() !== '') {
       createTask(columnId, content);
