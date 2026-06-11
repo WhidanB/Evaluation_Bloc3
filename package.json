@@ -8,6 +8,7 @@
 		"build": "tsc && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",
+		"test": "vitest",
 		"test:unit": "vitest run unit.test.tsx --environment jsdom",
 		"test:integration": "vitest run integration.test.tsx --environment jsdom",
 		"test:coverage": "vitest run --coverage --environment jsdom"
