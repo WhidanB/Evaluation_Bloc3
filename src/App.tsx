@@ -5,7 +5,7 @@ function App() {
     <div className="app-container">
       <header className="header">
         <h1>Flowbo Workspace</h1>
-        <p>Manage your tasks efficiently with our modern board.</p>
+        <p>This is my work for the CI/CD evaluation.</p>
       </header>
       <main>
         <KanbanBoard />
